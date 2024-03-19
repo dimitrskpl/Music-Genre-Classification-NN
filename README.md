@@ -4,7 +4,7 @@ This project aims to classify 1-second music signals into four genres: Classical
 ## Dataset
 The dataset consists of 1-second audio segments, each represented by 13 MFCC coefficients calculated over 50 ms, resulting in 20 feature vectors of dimension 13 for each music piece. For a static representation, the mean and standard deviation of each of the 13 coefficients across the 20 time moments were computed, leading to a 26-feature vector per music piece. Additionally, Mel-Spectrograms were used as a two-dimensional representation showing the time evolution of the spectrum of frequencies.
 
-The dataset is divided into training (3200 samples), validation (800 samples), and test (1376 samples) sets for model training, hyperparameter tuning, and generalization ability assessment, respectively.
+The dataset is divided into training (3200 samples), validation (800 samples), and test (1376 samples) sets for model training, hyperparameter tuning, and generalization ability assessment, respectively. The sets are located in *music_genre_data/*.
 
 ## Framework and Implementation
 Implemented in PyTorch and executed on Google Colab, this project comprises several steps, focusing first on creating and training a Feedforward Neural Network and then developing a Convolutional Neural Network (CNN) using Mel-Spectrograms as inputs.
